@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Wikamp</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/57e736b04b.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><i class="fa-solid fa-poo-storm"></i>
+                <aa>Better Wikamp</aa>
+            </h1>
+        </div>
+        <div class="start">
+            <button onclick="window.location.href = 'index.html'; return" class="link"><i class="fas fa-home"></i>
+                Start</button>
+        </div>
+        <div class="przedmioty" data-dropdown>
+            <button class="link" data-dropdown-button><i class="fas fa-book" data-dropdown-button></i>
+                Przedmioty</button>
+            <div class="dropdown-menu">
+                <div class="grid">
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1837" class="link">Wstęp do współczesnej
+                        inżynierii</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1537" class="link">Informacje dydaktyczne
+                        dla studentów</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=2490" class="link">Obwody elektryczne 1
+                        (Marek Korzybski)</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=3157" class="link">Obwody elektryczne 1
+                        (Marek Ossowski)</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=2588" class="link">Statyka i kinematyka</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=3170" class="link">Prawa i obowiązki
+                        studenta</a>
+                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1839" class="link">Technologie
+                        informatyczne</a>
+                    <a href="https://cmf.edu.p.lodz.pl/course/view.php?id=751" class="link">Fizyka 1 wykład</a>
+                    <a href="https://cmf.edu.p.lodz.pl/course/view.php?id=1710" class="link">Lab. Fizyka gr.5,6
+                        (Krystyna Krasińska)</a>
+                </div>
+            </div>
+        </div>
+        <div class="wydzialy" data-dropdown><button class="link" data-dropdown-button><i class="fas fa-desktop"></i>
+                Wydziały</button></div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div onclick="window.location.href = 'http://www.weeia.p.lodz.pl/';" class="one" id="tab1"><i
+                    class="fa-solid fa-house"></i>Strona wydziału WEEIA</div>
+            <div onclick="Plan()" class="two" id="tab2"><i class="fa-regular fa-calendar-days"></i>Plan lekcji</div>
+            <div onclick="window.location.href = 'https://poczta.p.lodz.pl/';" class="three" id="tab3"><i
+                    class="fa-solid fa-envelope"></i>Poczta</div>
+            <div onclick="window.location.href = 'http://bg.p.lodz.pl/';" class="four" id="tab4"><i
+                    class="fa-solid fa-book"></i>Biblioteka Politechniki Łódzkiej</div>
+            <div onclick="window.location.href = 'https://weeia.edu.p.lodz.pl/course/index.php';" class="five"
+                id="tab5"><i class="fa-solid fa-school"></i>Przedmioty</div>
+            <div onclick="window.location.href = 'https://nav.p.lodz.pl/';" class="six" id="tab6"><i
+                    class="fa-solid fa-map-location-dot"></i>Mapa Politechniki Łódzkiej</div>
+            <div onclick="window.location.href = 'http://cmf.p.lodz.pl/zadania/index.php';" class="seven" id="tab7"><i
+                    class="fa-solid fa-calculator"></i>Zadania CMF z Matematyki</div>
+            <div onclick="window.location.href = 'https://weeia.edu.p.lodz.pl/mod/page/view.php?id=6749#student';"
+                class="eight" id="tab8"><i class="fa-solid fa-graduation-cap"></i>Strefa Studenta</div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Page made by Jarosław Wierzbowski</p>
+    </div>
+</body>
+
+</html>
