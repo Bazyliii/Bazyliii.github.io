@@ -32,7 +32,7 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
         }
       }
     }
-    const proxy = "http://127.0.0.1:8080/";
+    const proxy = "https://wikamproxy.herokuapp.com/";
     const url = proxy + link;
     (async function () {
       pdfjsLib.GlobalWorkerOptions.workerSrc = "//mozilla.github.io/pdf.js/build/pdf.worker.js";
