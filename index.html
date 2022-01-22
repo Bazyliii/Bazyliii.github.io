@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Wikamp</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="icon.png">
     <script src="https://kit.fontawesome.com/57e736b04b.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
-    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="javascript/script.js" defer></script>
+    <!--<script src="javascript/pdf.js" defer></script> -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 
 <body>
@@ -52,10 +53,14 @@
                 Wydziały</button></div>
     </div>
     <div class="container">
+        <div class="planlekcji" id="planlekcji">
+            <div class="close" onclick="showhide()"><i class="fa-solid fa-square-xmark closeicon"></i></div>
+            <canvas id="canvas" class="canvas"></canvas>
+        </div>
         <div class="wrapper">
             <div onclick="window.location.href = 'http://www.weeia.p.lodz.pl/';" class="one" id="tab1"><i
                     class="fa-solid fa-house"></i>Strona wydziału WEEIA</div>
-            <div onclick="Plan()" class="two" id="tab2"><i class="fa-regular fa-calendar-days"></i>Plan lekcji</div>
+            <div onclick="showhide()" class="two" id="tab2"><i class="fa-regular fa-calendar-days"></i>Plan lekcji</div>
             <div onclick="window.location.href = 'https://poczta.p.lodz.pl/';" class="three" id="tab3"><i
                     class="fa-solid fa-envelope"></i>Poczta</div>
             <div onclick="window.location.href = 'http://bg.p.lodz.pl/';" class="four" id="tab4"><i

@@ -3,10 +3,11 @@
   user-select: none;
   box-sizing: border-box;
   --kolor-tabel: rgba(12, 55, 105, 1);
+  --kolor-tabel-invert: invert(0.86)var(--kolor-tabel);
   --kolor-tla: rgb(36, 36, 36);
   --kolor-tabel-darked: rgb(6, 29, 54);
   --kolor-ramek: rgb(19, 19, 19);
-  --animacja-znikania: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  --kolor-ramek-invert: invert(0.86)var(--kolor-ramek) --animacja-znikania: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 body {
@@ -331,7 +332,8 @@ button {
     grid-row: 4;
   }
 
-  .navbar .logo h1 aa, .navbar .logo h1 i{
+  .navbar .logo h1 aa,
+  .navbar .logo h1 i {
     transition: var(--animacja-znikania);
     pointer-events: none;
     overflow: hidden;
@@ -445,6 +447,24 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 0;
+}
+
+.planlekcji {
+  position: absolute;
+  filter: invert(0.86);
+  border: 2px solid var(--kolor-tabel-invert);
+  display: none;
+  top: 14vh;
+}
+
+.canvas {
+  width: clamp(900px, 90vw, 1600px);
+}
+
+.closeicon {
+  font-size: clamp(1em, 2vw, 2.5em);
+  position: absolute;
+  right: 30px;
+  top: 15px;
 }
