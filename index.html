@@ -16,9 +16,7 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <h1><i class="fa-solid fa-poo-storm"></i>
-                <aa>Better Wikamp</aa>
-            </h1>
+            <h1><i class="fa-solid fa-poo-storm"></i>Better Wikamp</h1>
         </div>
         <div class="start">
             <button onclick="window.location.href = 'index.html'; return" class="link"><i class="fas fa-home"></i>
@@ -49,17 +47,46 @@
             </div>
         </div>
         <div class="wydzialy" data-dropdown><button class="link" data-dropdown-button><i class="fas fa-desktop"></i>
-                Wydziały</button></div>
+                Wydziały</button>
+            <div class="dropdown-menu">
+                <div class="grid">
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=4" class="link">Centrum E-Learningu</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=9" class="link">BAIS</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=17" class="link">BiNoŻ</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=11" class="link">Chemia</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=16" class="link">Centrum Językowe</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=15" class="link">Centrum Matematyki i Fizyki</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=4&wantsurl=%2Fcourse%2Findex.php%3Fcategoryid%3D31" class="link">Centrum Sportu</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=3" class="link">FTIMS</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=14" class="link">IFE</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=6" class="link">KGP</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=8" class="link">Wydział Mechaniczny</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=19" class="link">Port</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=13" class="link">WIPOS</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=10" class="link">WOIZ</a>
+                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=7" class="link">WTMiWT</a>   
+                </div>
+            </div>
+        </div>
+        <div class="settings"><button class="link"><i class="fa-solid fa-gear"></i> Ustawienia</button></div>
     </div>
     <div class="container">
         <div class="planlekcji" id="planlekcji">
-            <div class="close" onclick="showhide()"><i class="fa-solid fa-square-xmark closeicon"></i></div>
+            <div class="plannavbar">
+                <i class="fa-solid fa-square-xmark closeicon" onclick="showhide()"></i></div>
             <canvas id="canvas" class="canvas"></canvas>
         </div>
         <div class="wrapper">
             <div onclick="window.location.href = 'http://www.weeia.p.lodz.pl/';" class="one" id="tab1"><i
                     class="fa-solid fa-house"></i>Strona wydziału WEEIA</div>
-            <div onclick="showhide()" class="two" id="tab2"><i class="fa-regular fa-calendar-days"></i>Plan lekcji</div>
+            <div onclick="showhide()" class="two" id="tab2">
+                <div class="loading-dots">
+                    <div class="bounce"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <i class="fa-regular fa-calendar-days calendar"></i>Plan lekcji
+            </div>
             <div onclick="window.location.href = 'https://poczta.p.lodz.pl/';" class="three" id="tab3"><i
                     class="fa-solid fa-envelope"></i>Poczta</div>
             <div onclick="window.location.href = 'http://bg.p.lodz.pl/';" class="four" id="tab4"><i

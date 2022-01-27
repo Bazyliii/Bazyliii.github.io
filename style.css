@@ -7,7 +7,9 @@
   --kolor-tla: rgb(36, 36, 36);
   --kolor-tabel-darked: rgb(6, 29, 54);
   --kolor-ramek: rgb(19, 19, 19);
-  --kolor-ramek-invert: invert(0.86)var(--kolor-ramek) --animacja-znikania: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  --kolor-ramek-invert: invert(0.86)var(--kolor-ramek);
+  --animacja-znikania: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  --kolor-elementow: rgb(255, 255, 255);
 }
 
 body {
@@ -17,38 +19,35 @@ body {
 
 .navbar,
 .footer {
-  color: white;
-  border: 0px solid black;
+  color: var(--kolor-elementow);
+  border: 0px solid var(--kolor-ramek);
   margin: 0px;
 }
 
-.navbar .logo i {
-  padding-right: 16px;
-  padding-left: 30px;
-  transition: var(--animacja-znikania);
+.navbar .logo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 50px;
+  padding-left: 20px;
+  font-size: 0.93rem;
 }
 
-.navbar .logo {
-  opacity: 1;
-  position: relative;
-  left: clamp(-300px, -5%, -10px);
-  pointer-events: none;
-  transition: var(--animacja-znikania);
-  padding: 0;
-  margin: 0;
-  font-size: 12.3px;
+.navbar .logo i {
+  padding-right: 10px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
   padding-bottom: 10rem;
 }
 
 .start button:hover,
 .przedmioty button:hover,
-.wydzialy button:hover {
+.wydzialy button:hover,
+.settings button:hover,
+.toggle-button button:hover {
   cursor: pointer;
   background-color: var(--kolor-tabel-darked);
   transition: 200ms background-color ease-in-out;
@@ -56,6 +55,8 @@ body {
 
 .navbar {
   display: flex;
+  width: 100vw;
+  height: 80px;
   text-align: center;
   justify-content: center;
   background-color: var(--kolor-tabel);
@@ -64,16 +65,13 @@ body {
 
 .przedmioty button,
 .wydzialy button,
-.start button {
+.start button,
+.settings button,
+.toggle-button button {
   color: white;
   font-size: 19.6px;
-  width: 100%;
-  max-width: 300px;
+  width: 180px;
   height: 100%;
-  padding: 20px;
-  margin: 0;
-  padding-left: 24px;
-  padding-right: 24px;
   background-color: var(--kolor-tabel);
 }
 
@@ -84,12 +82,13 @@ button {
 }
 
 .wrapper {
+  padding-top: 8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 19px;
   grid-auto-rows: minmax(100px, auto);
   text-align: center;
-  color: white;
+  color: var(--kolor-elementow);
 }
 
 .one {
@@ -102,6 +101,7 @@ button {
   grid-column: 2;
   grid-row: 1;
   background: var(--kolor-tabel);
+  pointer-events: none;
 }
 
 .three {
@@ -200,18 +200,22 @@ button {
   pointer-events: auto;
 }
 
+.wydzialy.active>.link+.dropdown-menu {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4px;
   background-color: var(--kolor-tabel);
-  box-shadow: 0 2px 5px 0 black;
   border-radius: 1px;
   word-break: break-word;
   padding: 4px;
 
 }
-
 .grid a {
   background-color: rgba(0, 128, 128, 0.048);
   font-size: 16px;
@@ -222,9 +226,117 @@ button {
   padding-left: 3px;
   padding-right: 3px;
 }
-
 .grid a:hover {
   background-color: rgba(0, 0, 0, 0.137)
+}
+.footer {
+  position: fixed;
+  background-color: var(--kolor-tabel);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(40px, 5vh, 70px);
+  font-size: clamp(13px, 1.6vh, 30px);
+  border-bottom: 5px solid var(--kolor-ramek);
+  transition: var(--animacja-znikania);
+
+}
+
+.footer p {
+  padding-left: 18.7%;
+  transition: var(--animacja-znikania);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height:0;
+}
+
+.planlekcji {
+  filter: invert(0.86);
+  border: 2px solid var(--kolor-tabel-invert);
+  display: none;
+}
+
+.container .planlekcji {
+  padding-top: 2rem;
+}
+
+.canvas {
+  width: 80vw;
+}
+
+
+.plannavbar{
+  width: 5%;
+  right:0;
+  height: 6%;
+  position: absolute;
+  display:table
+}
+.plannavbar i{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size:3.2vw;
+  padding: 0;
+  margin: 0;
+}
+.plannavbar i:hover{
+  cursor: pointer;
+}
+.loading {
+  background-color: var(--kolor-tabel);
+  width: 40%;
+  height: 40%;
+  z-index: 2;
+  position: relative;
+}
+
+.loading-dots>div {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--kolor-elementow);
+  border-radius: 50%;
+  display: inline-block;
+  animation: 1.5s bounce infinite ease-in-out both;
+  margin-top: 62px;
+}
+
+.loading-dots .bounce {
+  animation-delay: -0.30s;
+}
+
+.loading-dots .bounce2 {
+  animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+.two i {
+  opacity: 0;
+}
+
+/*Responsywność*/
+@media only screen and (max-width: 790px) {
+
+  .navbar .przedmioty,
+  .navbar .wydzialy,
+  .navbar .settings,
+  .navbar .start {
+    
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -280,9 +392,6 @@ button {
 
 
 @media only screen and (max-width: 900px) {
-
-
-
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -331,19 +440,9 @@ button {
     grid-column: 2;
     grid-row: 4;
   }
-
-  .navbar .logo h1 aa,
-  .navbar .logo h1 i {
-    transition: var(--animacja-znikania);
-    pointer-events: none;
-    overflow: hidden;
-    display: none;
-  }
 }
 
-
 @media only screen and (max-width: 600px) {
-
   .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -351,6 +450,7 @@ button {
     grid-auto-rows: minmax(40px, auto);
     text-align: center;
     color: white;
+    padding-top: 0rem;
   }
 
   .one {
@@ -396,7 +496,6 @@ button {
   .container {
     display: flex;
     justify-content: center;
-    padding-top: 0;
     padding-bottom: 10rem;
   }
 
@@ -408,7 +507,6 @@ button {
   .six,
   .seven,
   .eight {
-
     height: 230px;
     padding: 15px;
     text-align: center;
@@ -416,55 +514,13 @@ button {
     min-width: 400px;
   }
 
-  .navbar .logo h1 {
-    transition: var(--animacja-znikania);
-    font-size: 0
-  }
-
   .footer {
     opacity: 0;
     pointer-events: none;
     transition: var(--animacja-znikania);
   }
-}
 
-.footer {
-  position: fixed;
-  background-color: var(--kolor-tabel);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: clamp(40px, 5vh, 70px);
-  font-size: clamp(13px, 1.6vh, 30px);
-  border-bottom: 5px solid var(--kolor-ramek);
-  transition: var(--animacja-znikania);
-
-}
-
-.footer p {
-  padding-left: 18.7%;
-  transition: var(--animacja-znikania);
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-.planlekcji {
-  position: absolute;
-  filter: invert(0.86);
-  border: 2px solid var(--kolor-tabel-invert);
-  display: none;
-  top: 14vh;
-}
-
-.canvas {
-  width: clamp(900px, 90vw, 1600px);
-}
-
-.closeicon {
-  font-size: clamp(1em, 2vw, 2.5em);
-  position: absolute;
-  right: 30px;
-  top: 15px;
+  .logo {
+    display: none;
+  }
 }
