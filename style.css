@@ -163,7 +163,7 @@ button {
   max-width: 290px;
   min-width: 260px;
   border-radius: 6px;
-  background-image: url('./wave-haikei2.svg');
+  background-image: url('wave-haikei2.svg');
   background-size:cover;
   filter: drop-shadow(6px 6px 8px rgb(20, 20, 20));
 }
