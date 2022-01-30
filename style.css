@@ -1,20 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   user-select: none;
   box-sizing: border-box;
-  --kolor-tabel: rgba(12, 55, 105, 1);
-  --kolor-tabel-invert: invert(0.86)var(--kolor-tabel);
-  --kolor-tla: rgb(36, 36, 36);
-  --kolor-tabel-darked: rgb(6, 29, 54);
+  --kolor-tabel: #113e6b;
+  --kolor-tla: #242424;
+  --kolor-tabel-darked: #061d36;
   --kolor-ramek: rgb(19, 19, 19);
-  --kolor-ramek-invert: invert(0.86)var(--kolor-ramek);
-  --animacja-znikania: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  --animacja-znikania:filter 2222ms ease-in-out, height 150ms ease-in-out, opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  --animacja-znikania-2:opacity 150ms ease-in-out, color 150ms ease-in-out, height 150ms ease-in-out, transform 150ms ease-in-out;
   --kolor-elementow: rgb(255, 255, 255);
+  --kolor-elementow-2: rgb(255, 0, 0);
+  --kolor-elementow-3: rgb(255, 255, 255);
 }
 
 body {
+  background-color: #242424;
   margin: 0;
-  background-color: var(--kolor-tla);
 }
 
 .navbar,
@@ -22,6 +24,7 @@ body {
   color: var(--kolor-elementow);
   border: 0px solid var(--kolor-ramek);
   margin: 0px;
+  
 }
 
 .navbar .logo {
@@ -31,6 +34,7 @@ body {
   padding-right: 50px;
   padding-left: 20px;
   font-size: 0.93rem;
+  display:flex
 }
 
 .navbar .logo i {
@@ -54,6 +58,7 @@ body {
 }
 
 .navbar {
+  
   display: flex;
   width: 100vw;
   height: 80px;
@@ -67,7 +72,7 @@ body {
 .wydzialy button,
 .start button,
 .settings button,
-.toggle-button button {
+.toggle-button button{
   color: white;
   font-size: 19.6px;
   width: 180px;
@@ -79,10 +84,11 @@ button {
   border: none;
   text-decoration: none;
   background: none;
+  z-index: 2;
 }
 
 .wrapper {
-  padding-top: 8rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 19px;
@@ -148,7 +154,7 @@ button {
 .six,
 .seven,
 .eight {
-  border: solid 4px var(--kolor-ramek);
+  border: solid 5px var(--kolor-ramek);
   transition: transform .3s;
   height: 230px;
   padding: 15px;
@@ -156,6 +162,10 @@ button {
   text-align: center;
   max-width: 290px;
   min-width: 260px;
+  border-radius: 6px;
+  background-image: url('./wave-haikei2.svg');
+  background-size:cover;
+  filter: drop-shadow(6px 6px 8px rgb(20, 20, 20));
 }
 
 .one i,
@@ -180,7 +190,7 @@ button {
 .seven:hover,
 .eight:hover {
   transform: scale(1.07);
-  border: solid 4px rgba(0, 0, 0, 0.315);
+  filter: brightness(0.84);
   cursor: pointer;
 }
 
@@ -209,20 +219,19 @@ button {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
+  grid-gap: 2px;
   background-color: var(--kolor-tabel);
-  border-radius: 1px;
   word-break: break-word;
   padding: 4px;
-
+  border-radius: 0 0 5px 5px;
 }
 .grid a {
-  background-color: rgba(0, 128, 128, 0.048);
   font-size: 16px;
   text-decoration: none;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  min-height: 60px;
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -239,7 +248,6 @@ button {
   font-size: clamp(13px, 1.6vh, 30px);
   border-bottom: 5px solid var(--kolor-ramek);
   transition: var(--animacja-znikania);
-
 }
 
 .footer p {
@@ -254,16 +262,15 @@ button {
 
 .planlekcji {
   filter: invert(0.86);
-  border: 2px solid var(--kolor-tabel-invert);
   display: none;
 }
-
 .container .planlekcji {
   padding-top: 2rem;
+
 }
 
 .canvas {
-  width: 80vw;
+  width: 89vw; 
 }
 
 
@@ -272,18 +279,24 @@ button {
   right:0;
   height: 6%;
   position: absolute;
-  display:table
+  display:table;
 }
 .plannavbar i{
   display: table-cell;
   vertical-align: middle;
+  filter: invert(0.86);
+  color:var(--kolor-elementow-3);
   text-align: center;
-  font-size:3.2vw;
+  font-size:3.1vw;
   padding: 0;
   margin: 0;
+  transition: var(--animacja-znikania-2);
 }
 .plannavbar i:hover{
   cursor: pointer;
+  filter: invert(0.86);
+  color: var(--kolor-elementow-2);
+  transform: scale(1.05);
 }
 .loading {
   background-color: var(--kolor-tabel);
@@ -328,16 +341,33 @@ button {
   opacity: 0;
 }
 
-/*Responsywność*/
-@media only screen and (max-width: 790px) {
 
-  .navbar .przedmioty,
-  .navbar .wydzialy,
-  .navbar .settings,
-  .navbar .start {
-    
-  }
+.menu{
+  width: 80px;
+  right: 0px;
+  top: 5px;
+  height: 75.3px;
+  position: absolute;
+  display: none;
+  background-color: var(--kolor-tabel);
 }
+.menu i{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size:50px;
+  color: var(--kolor-elementow);
+  transition: var(--animacja-znikania);
+  cursor: pointer;
+}
+.menu:hover{
+  cursor: pointer;
+  background-color: var(--kolor-tabel-darked);
+  transition: 200ms background-color ease-in-out;
+}
+
+/*Responsywność*/
+
 
 @media only screen and (max-width: 1200px) {
   .wrapper {
@@ -441,6 +471,42 @@ button {
     grid-row: 4;
   }
 }
+@media only screen and (max-width: 720px) {
+  .navbar .przedmioty,
+  .navbar .wydzialy,
+  .navbar .settings,
+  .navbar .start {
+    /*display: none;*/
+    height:70px;
+    opacity: 1;
+    transition: var(--animacja-znikania-2);
+    position: relative;
+    pointer-events: auto;
+
+  }
+  .navbar{
+    flex-direction: column;
+    display:block;
+  }
+  .navbar button{
+    width:100%;
+  }
+  .logo{
+    width: 100%;
+  }
+  .menu{
+    display: table;
+  }
+  .navbar.invisible .przedmioty,
+  .navbar.invisible .wydzialy,
+  .navbar.invisible .settings,
+  .navbar.invisible .start {
+    transition: var(--animacja-znikania-2);
+    height:0px;
+    pointer-events: none;
+    opacity: 0
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .wrapper {
@@ -511,7 +577,7 @@ button {
     padding: 15px;
     text-align: center;
     max-width: 400px;
-    min-width: 400px;
+    min-width: 200px;
   }
 
   .footer {
@@ -519,8 +585,8 @@ button {
     pointer-events: none;
     transition: var(--animacja-znikania);
   }
+}
 
-  .logo {
-    display: none;
-  }
+.link{
+  position: relative;
 }

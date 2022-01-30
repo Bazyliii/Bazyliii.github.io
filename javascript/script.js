@@ -94,21 +94,7 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://weeia.ed
     } catch (e) {}
     console.log(filteredItems)
   });
-//Fetching wydziałów
-fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://weeia.edu.p.lodz.pl')}`)
-  .then(response => {
-    if (response.ok) return response.json()
-    throw new Error('Network response was not ok.')
-  })
-  .then(data => {
-    console.log(data.contents)
-  });
-
-
-
-
-
-
+  
 function showhide() {
   let plan = document.getElementById("planlekcji");
   let wrapper = document.querySelector(".wrapper");
@@ -124,6 +110,26 @@ function showhide() {
   }
 
 
-
-
-
+  var dropdownMenuDiv = document.querySelector(".navbar");
+var dropdownMenu = document.querySelector(".menu");
+document.onclick = check;
+function check(e){
+  var target = (e && e.target)  || (event && event.srcElement);
+  if (!checkParent(target, dropdownMenuDiv)) {
+    if (checkParent(target, dropdownMenu)) {
+      if (dropdownMenuDiv.classList.contains("invisible")) {
+        dropdownMenuDiv.style.left = dropdownMenu.getBoundingClientRect().left + 'px';
+        dropdownMenuDiv.classList.remove("invisible");
+      } else {dropdownMenuDiv.classList.add("invisible");}
+    } else {
+      dropdownMenuDiv.classList.add("invisible");
+    }
+  }
+}
+function checkParent(t, elm) {
+  while(t.parentNode) {
+    if( t == elm ) {return true;}
+    t = t.parentNode;
+  }
+  return false;
+}
