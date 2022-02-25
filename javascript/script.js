@@ -13,7 +13,7 @@ document.addEventListener("click", e => {
 	})
 });
 //Fetching i wyświetlanie planu
-fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia.p.lodz.pl/dla-studentow/wstepne-plany-semestru-letniego/studia-stacjonarne-plany-zajec/')}`)
+fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia.p.lodz.pl/dla-studentow/plany-semestru-letniego/studia-stacjonarne/')}`)
 	.then(response => {
 		if (response.ok) return response.json()
 		throw new Error('Network response was not ok.')
