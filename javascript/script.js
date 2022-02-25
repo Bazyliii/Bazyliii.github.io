@@ -25,7 +25,7 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 		for (i = 0; i < 12; i++) {
 			for (j = 1; j <= 31; j++) {
 				for (k = 0; k < 3; k++) {
-					linkContent = data.contents.match("wgrane_pliki/" + years[k] + months[i] + j + "plany.pdf");
+					linkContent = data.contents.match("wgrane_pliki/" + years[k] + months[i] + j + "v1-00.pdf");
 					if (linkContent != null) {
 						link = "http://www.weeia.p.lodz.pl/" + linkContent;
 					}
