@@ -18,20 +18,16 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 		if (response.ok) return response.json()
 		throw new Error('Network response was not ok.')
 	})
-	.then(data => {
-		months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'sep', 'aug', 'dec', 'oct', 'nov'];
-		currentYear = parseInt(new Date().getFullYear().toString().substr(-2));
-		years = [currentYear - 1, currentYear, currentYear + 1];
-		for (i = 0; i < 12; i++) {
-			for (j = 1; j <= 31; j++) {
-				for (k = 0; k < 3; k++) {
-					linkContent = data.contents.match("wgrane_pliki/" + years[k] + months[i] + j + "v1-00.pdf");
-					if (linkContent != null) {
-						link = "http://www.weeia.p.lodz.pl/" + linkContent;
-					}
-				}
+		.then(data => {
+			currentYear = parseInt(new Date().getFullYear().toString().substr(-2));
+			years = [currentYear - 1, currentYear, currentYear + 1];
+			for(i=0; i<3; i++){
+				linkPart = data.contents.split("href='wgrane_pliki/" + years[i]).pop();
+				linkPart2 = "http://www.weeia.p.lodz.pl/wgrane_pliki/" + years[i] + linkPart.substring(0, linkPart.indexOf("'")).split("\n").filter(item => item !== '');
+			if(linkPart2.length<100){
+				link=linkPart2
 			}
-		}
+		} 
 		const proxy = "https://wikamproxy.herokuapp.com/";
 		const url = proxy + link;
 		(async function () {
