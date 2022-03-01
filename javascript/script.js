@@ -93,10 +93,10 @@ function showhide() {
 	if (plan.style.opacity === "1") {
 		plan.style.opacity = "0";
 		plan.style.pointerEvents = "none";
-		wrapper.style.display = "grid";
 		var delayInMilliseconds = 100;
 		setTimeout(function () {
 			plan.style.display = "none";
+			wrapper.style.display = "grid";
 		}, delayInMilliseconds);
 	} else {
 		plan.style.display = "block";
