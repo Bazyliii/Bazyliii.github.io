@@ -56,7 +56,6 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 					canvasContext: context,
 					viewport: viewport
 				}).promise;
-
 			} else {
 				console.log("Error!");
 			}
@@ -88,7 +87,6 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://weeia.ed
 		} catch (e) {}
 		console.log(filteredItems)
 	});
-
 function showhide() {
 	let plan = document.getElementById("planlekcji");
 	let wrapper = document.querySelector(".wrapper");
@@ -120,7 +118,7 @@ function check(e) {
 	if (!checkParent(target, dropdownMenuDiv)) {
 		if (checkParent(target, dropdownMenu)) {
 			if (dropdownMenuDiv.classList.contains("invisible")) {
-				dropdownMenuDiv.style.left = dropdownMenu.getBoundingClientRect().left + 'px';
+				
 				dropdownMenuDiv.classList.remove("invisible");
 			} else {
 				dropdownMenuDiv.classList.add("invisible");
