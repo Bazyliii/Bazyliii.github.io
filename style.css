@@ -397,7 +397,9 @@ button {
 	transition: 200ms background-color ease-in-out;
 }
 
-
+.logo:hover{
+	cursor: pointer;
+}
 
 /*Responsywność*/
 
@@ -582,12 +584,13 @@ button {
 	.plannavbar {
 		width: 8%;
 		left: 10px;
-		height: 5.5%;
+		height: 5%;
+		top: 5vh;
 		position: absolute;
 		display: table;
 	}
 	.plannavbar i{
-		font-size: 35px
+		font-size: 40px
 	}
 }
 
