@@ -33,7 +33,7 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 		(async function () {
 			pdfjsLib.GlobalWorkerOptions.workerSrc = "//mozilla.github.io/pdf.js/build/pdf.worker.js";
 			const doc = await pdfjsLib.getDocument(url).promise;
-			let currentPage = 16;
+			let currentPage = 15;
 			await getPage(doc, currentPage);
 		})();
 		async function getPage(doc, pageNumber) {
