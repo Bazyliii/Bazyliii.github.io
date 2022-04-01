@@ -1,117 +1,74 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
+    <link rel="icon" type="image/x-icon" href="poo-storm-solid.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#242424"/>
-    <title>Better Wikamp</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="icon.ico">
     <script src="https://kit.fontawesome.com/57e736b04b.js" crossorigin="anonymous"></script>
-    <script src="javascript/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Wikamp</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="poo-storm-solid.svg">
+    <script src="Javascript/plan.js" defer></script>
+    <script src="Javascript/subjects.js" defer></script>
+    <script src="Javascript/faculty.js" defer></script>
 </head>
-
 <body>
-    <div class="menu">
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-    </div>
-    <div class="navbar invisible">
-        <div class="logo" onclick="window.location.href = 'index.html'; return">
-            <h1><i class="fa-solid fa-poo-storm"></i>Better Wikamp</h1>
+    <header>
+        <h1 onclick="window.location.href = 'index.html';"><i class="fa-solid fa-poo-storm"></i> Better Wikamp</h1>
+        <div class="nav-buttons-container"></div>
+    </header>
+    <main>
+        <div class="plan-container" id="plan-container" style="opacity: 0;">
+            <i class="fa-solid fa-square-xmark" id="close-button" onclick="showhide(plan, 'flex')"></i>
+            <canvas></canvas>
         </div>
-        <div class="przedmioty" data-dropdown>
-            <button class="link" data-dropdown-button><i class="fas fa-book" data-dropdown-button></i>
-                Przedmioty <i class="fa-solid fa-caret-down" data-dropdown-button></i></button>
-            <div class="dropdown-menu">
-                <div class="grid">
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1837" class="link">Wstęp do współczesnej
-                        inżynierii</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1537" class="link">Informacje dydaktyczne
-                        dla studentów</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=2490" class="link">Obwody elektryczne 1
-                        (Marek Korzybski)</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=3157" class="link">Obwody elektryczne 1
-                        (Marek Ossowski)</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=2588" class="link">Statyka i kinematyka</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=3170" class="link">Prawa i obowiązki
-                        studenta</a>
-                    <a href="https://weeia.edu.p.lodz.pl/course/view.php?id=1839" class="link">Technologie
-                        informatyczne</a>
-                    <a href="https://cmf.edu.p.lodz.pl/course/view.php?id=751" class="link">Fizyka 1 wykład</a>
-                    <a href="https://cmf.edu.p.lodz.pl/course/view.php?id=1710" class="link">Lab. Fizyka gr.5,6
-                        (Krystyna Krasińska)</a>
-                </div>
+        <div class="task-grid" id="task-grid">
+            <div class="task" onclick="window.location.href = 'http://www.weeia.p.lodz.pl/';">
+                <img class="weeia" src="/Images/Weeialogo.svg">Strona wydziału WEEIA
             </div>
-        </div>
-        <div class="wydzialy" data-dropdown><button class="link" data-dropdown-button><i class="fas fa-desktop" data-dropdown-button></i>
-                Wydziały <i class="fa-solid fa-caret-down" data-dropdown-button></i></button>
-            <div class="dropdown-menu">
-                <div class="grid">
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=4" class="link">Centrum
-                        E-Learningu</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=9" class="link">BAIS</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=17" class="link">BiNoŻ</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=11" class="link">Chemia</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=16" class="link">Centrum Językowe</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=15" class="link">Centrum Matematyki i
-                        Fizyki</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=4&wantsurl=%2Fcourse%2Findex.php%3Fcategoryid%3D31"
-                        class="link">Centrum Sportu</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=3" class="link">FTIMS</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=14" class="link">IFE</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=6" class="link">KGP</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=8" class="link">Wydział
-                        Mechaniczny</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=19" class="link">Port</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=13" class="link">WIPOS</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=10" class="link">WOIZ</a>
-                    <a href="https://weeia.edu.p.lodz.pl/auth/mnet/jump.php?hostid=7" class="link">WTMiWT</a>
-                </div>
+            <div class="task" onclick="showhide(plan, 'flex')">
+                <i class="fa-solid fa-calendar-days"></i>Plan Lekcji
             </div>
-        </div>
-        <div class="settings"><button class="link"><i class="fa-solid fa-gear"></i> Ustawienia</button></div>
-    </div>
-    <div class="container">
-        <div class="planlekcji" id="planlekcji">
-            <div class="plannavbar">
-                <i class="fa-solid fa-square-xmark closeicon" onclick="showhide()"></i></div>
-            <canvas id="canvas" class="canvas"></canvas>
-        </div>
-        <div class="wrapper">
-            <div onclick="window.location.href = 'http://www.weeia.p.lodz.pl/';" class="one" id="tab1"><i
-                    class="fa-solid fa-house"></i>Strona wydziału WEEIA</div>
-            <div onclick="showhide()" class="two" id="tab2">
-                <div class="loading-dots">
-                    <div class="bounce"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-                <i class="fa-regular fa-calendar-days calendar"></i>Plan lekcji
+            <div class="task" onclick="showhide(subjects, 'grid')">
+                <i class="fa-solid fa-bookmark"></i>Przedmioty
             </div>
-            <div onclick="window.location.href = 'https://poczta.p.lodz.pl/';" class="three" id="tab3"><i
-                    class="fa-solid fa-envelope"></i>Poczta</div>
-            <div onclick="window.location.href = 'http://bg.p.lodz.pl/';" class="four" id="tab4"><i
-                    class="fa-solid fa-book"></i>Biblioteka Politechniki Łódzkiej</div>
-            <div onclick="window.location.href = 'https://weeia.edu.p.lodz.pl/course/index.php';" class="five"
-                id="tab5"><i class="fa-solid fa-school"></i>Przedmioty</div>
-            <div onclick="window.location.href = 'https://nav.p.lodz.pl/';" class="six" id="tab6"><i
-                    class="fa-solid fa-map-location-dot"></i>Mapa Politechniki Łódzkiej</div>
-            <div onclick="window.location.href = 'http://cmf.p.lodz.pl/zadania/index.php';" class="seven" id="tab7"><i
-                    class="fa-solid fa-calculator"></i>Zadania CMF z Matematyki</div>
-            <div onclick="window.location.href = 'https://weeia.edu.p.lodz.pl/mod/page/view.php?id=6749#student';"
-                class="eight" id="tab8"><i class="fa-solid fa-graduation-cap"></i>Strefa Studenta</div>
-        </div>
-        
-    </div>
-   
-    </div>
-    <div class="footer">
-        <p>Page made by Jarosław Wierzbowski</p>
-    </div>
-</body>
+            <div class="task" onclick="showhide(faculty, 'grid')">
+                <i class="fa-solid fa-scroll"></i>Wydziały
+            </div>
+            <div class="task" onclick="window.location.href = 'https://poczta.p.lodz.pl/';">
+                <i class="fa-solid fa-envelopes-bulk"></i>Poczta
+            </div>
+            <div class="task" onclick="window.location.href = 'http://bg.p.lodz.pl/';" >
+                <i class="fa-solid fa-book-bookmark"></i>Biblioteka Politechniki Łódzkiej
+            </div>
+            <div class="task" onclick="window.location.href = 'https://webdziekanat.p.lodz.pl/webdziekanat/glowna.html';">
+                <i class="fa-solid fa-user-graduate"></i>Web Dziekanat
+            </div>
+            <div class="task" onclick="window.location.href = 'https://nav.p.lodz.pl/';">
+                <i class="fa-solid fa-map-location-dot"></i>Mapa Politechniki Łódzkiej
+            </div>
+            <div class="task" onclick="window.location.href = 'http://cmf.p.lodz.pl/zadania/index.php';">
+                <i class="fa-solid fa-calculator"></i>Zadania CMF z Matematyki
+            </div>
+            <div class="task" onclick="window.location.href = 'https://weeia.edu.p.lodz.pl/mod/page/view.php?id=6749#student';">
+                <i class="fa-solid fa-school"></i>Strefa Studenta
+            </div>
 
+        </div>
+        <div class="subjects-grid" id="subjects-grid" style="opacity: 0;">
+            <div class="task" onclick="showhide(subjects, 'grid')">
+                <i class="fa-solid fa-square-caret-left"></i>Wstecz
+            </div>
+        </div>
+        <div class="faculty-grid" id="faculty-grid" style="opacity: 0;">
+            <div class="task" onclick="showhide(faculty, 'grid')">
+                <i class="fa-solid fa-square-caret-left"></i>Wstecz
+            </div>
+        </div>
+    </main>
+    <footer>
+        Politechnika łódzka
+    </footer>
+</body>
 </html>
