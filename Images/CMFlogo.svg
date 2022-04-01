@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="483.77954"
+   height="483.77954"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg19053"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="CMFlogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19055"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="128mm"
+     units="px"
+     inkscape:zoom="1.4805976"
+     inkscape:cx="347.49481"
+     inkscape:cy="234.36482"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs19050" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:3.80752"
+       id="rect121"
+       width="111.20428"
+       height="16.989542"
+       x="8.1825647"
+       y="16.37006" />
+    <rect
+       style="fill:#ffffff;stroke-width:3.80752"
+       id="rect167"
+       width="23.553686"
+       height="44.790615"
+       x="8.1825647"
+       y="41.081997" />
+    <rect
+       style="fill:#ffffff;stroke-width:3.80752"
+       id="rect169"
+       width="111.33299"
+       height="17.633087"
+       x="7.9251032"
+       y="95.912018" />
+    <circle
+       style="fill:#ffffff;stroke-width:3.80752"
+       id="path299"
+       cx="82.190033"
+       cy="63.92791"
+       r="3.0890079" />
+    <rect
+       style="fill:#ffffff;stroke-width:4.08992"
+       id="rect509-6"
+       width="14.833673"
+       height="1.4479725"
+       x="92.615196"
+       y="47.298187" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff"
+       id="path685-1"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="27.930387"
+       sodipodi:cy="8.3072834"
+       sodipodi:r1="2.1236112"
+       sodipodi:r2="1.0618056"
+       sodipodi:arg1="0"
+       sodipodi:arg2="1.0471976"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:transform-center-x="-9.5804072"
+       transform="matrix(4.7745468,0,0,1.9509099,-21.146765,31.664602)"
+       d="M 30.053999,8.3072834 26.868582,10.146385 V 6.4681821 Z" />
+    <rect
+       style="fill:#ffffff;stroke-width:4.08992"
+       id="rect509-6-8"
+       width="14.833673"
+       height="1.4479725"
+       x="52.148575"
+       y="47.32761" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff"
+       id="path685-1-4"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="27.930387"
+       sodipodi:cy="8.3072834"
+       sodipodi:r1="2.1236112"
+       sodipodi:r2="1.0618056"
+       sodipodi:arg1="0"
+       sodipodi:arg2="1.0471976"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:transform-center-x="-9.5804077"
+       transform="matrix(4.7745468,0,0,1.9509099,-61.613344,31.694247)"
+       d="M 30.053999,8.3072834 26.868582,10.146385 V 6.4681821 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:40.3136px;line-height:1.25;font-family:sans-serif;fill:#ffffff;stroke-width:3.02351"
+       x="38.465336"
+       y="86.216591"
+       id="text9264"
+       transform="scale(1.1180727,0.89439622)"><tspan
+         sodipodi:role="line"
+         id="tspan9262"
+         x="38.465336"
+         y="86.216591"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Arial;-inkscape-font-specification:'Arial Italic Condensed';fill:#ffffff;stroke-width:3.02351">M</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40.3136px;line-height:1.25;font-family:sans-serif;fill:#ffffff;stroke-width:3.02351"
+       x="77.408272"
+       y="86.477242"
+       id="text9264-8"
+       transform="scale(1.1180727,0.89439622)"><tspan
+         sodipodi:role="line"
+         id="tspan9262-3"
+         x="77.408272"
+         y="86.477242"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Arial;-inkscape-font-specification:'Arial Italic Condensed';fill:#ffffff;stroke-width:3.02351">F</tspan></text>
+  </g>
+</svg>
