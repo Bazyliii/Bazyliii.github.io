@@ -3,6 +3,9 @@
         {"nazwa":"Eksperymentatorium Mechaniki",
             "link":"https://weeia.edu.p.lodz.pl/course/view.php?id=3263",
             "ikona": "<i class='fa-solid fa-gears'></i>"},
+        {"nazwa":"Instrukcje Laboratorium Mechaniki",
+            "link":"http://www.kdm.p.lodz.pl/labs.html",
+            "ikona": "<i class='fa-solid fa-gear'></i>"},
         {"nazwa":"Grafika inżynierska",
             "link":"https://weeia.edu.p.lodz.pl/course/view.php?id=1900",
             "ikona": "<i class='fa-solid fa-chart-area'></i>"},
@@ -21,6 +24,7 @@
         {"nazwa":"Laboratorium Metrologiczne",
             "link":"http://matel.p.lodz.pl/meie_aisr.php",
             "ikona": "<i class='fa-solid fa-mobile-retro'></i>"}
+            
     ],
     "wydzialy":[
         {"nazwa":"Centrum Matematyki i Fizyki",
