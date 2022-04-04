@@ -149,6 +149,7 @@ h1:hover{
         display: block;
     }
     .plan-container{
+	height:100vh;
         overflow: auto;
     }
     #close-button{
