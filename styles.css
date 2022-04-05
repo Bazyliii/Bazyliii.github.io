@@ -199,24 +199,3 @@ h1:hover{
         font-size: 10vw;
     }
 }
-
-@media only screen and (max-width: 900px) {
-    .task-grid,.subjects-grid{
-        padding-left: 10%;
-        padding-right: 10%
-    }
-    canvas{
-        width: 260vw;
-        transform:translateX(32%);
-    }
-    body{
-        display: block;
-    }
-    .plan-container{
-        overflow: auto;
-        height:100vh;
-    }
-    #close-button{
-        font-size: 10vw;
-    }
-  }
