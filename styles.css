@@ -15,7 +15,23 @@
 	width: 0;
 	height: 0;
 }
-
+.settings{
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.726);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+.settings .task{
+    width: 300px;
+}
+.settings-grid{
+    display:grid;
+    gap: 15px;
+}
 body {
     display: grid;
     height: 100vh;
