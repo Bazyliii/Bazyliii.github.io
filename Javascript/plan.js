@@ -24,10 +24,13 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 				const viewport = page.getViewport({
 					scale: 3
 				})
-				const canvas = document.querySelector("canvas")
+				const canvas = document.getElementById("canvas")
 				const context = canvas.getContext("2d")
-				canvas.height = viewport.height
+				canvas.height = viewport.height + 100
 				canvas.width = viewport.width
+				document.querySelector('.loading-dots').display = "none"
+				document.getElementById("text").style.display = "block"
+				document.getElementById("plan").style.display = "block"
 				return await page.render({
 					canvasContext: context,
 					viewport: viewport
