@@ -148,12 +148,11 @@ canvas{
     left: 0;
     z-index: 2;
     font-size: 3.5vw;
-    transform: translateX(7vw) scale(1);
-    transition:color 100ms ease-in-out , transform 100ms ease-in-out ;
+    transform: translateX(7vw);
+    transition:color 100ms ease-in-out;
 }
 #close-button:hover{
     color: #CD201F;
-    transform:  translateX(7vw) scale(1.15);
 }
 
 .nav-button{
