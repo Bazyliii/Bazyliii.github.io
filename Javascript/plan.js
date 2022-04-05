@@ -24,13 +24,14 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 				const viewport = page.getViewport({
 					scale: 3
 				})
-				const canvas = document.getElementById("canvas")
+				const canvas = document.querySelector("canvas")
 				const context = canvas.getContext("2d")
 				canvas.height = viewport.height + 100
 				canvas.width = viewport.width
-				document.querySelector('.loading-dots').display = "none"
+				document.querySelector('.loading-dots').style.display = "none"
 				document.getElementById("text").style.display = "block"
-				document.getElementById("plan").style.display = "block"
+				document.querySelector('.fa-calendar-days').style.display = "block"
+				document.getElementById("plan").style.pointerEvents = "auto"
 				return await page.render({
 					canvasContext: context,
 					viewport: viewport
