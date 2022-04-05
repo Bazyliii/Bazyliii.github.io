@@ -28,7 +28,6 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-top: var(--dark-color) solid 5px;
     height:60px;
 }
 
