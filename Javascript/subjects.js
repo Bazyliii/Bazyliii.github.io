@@ -1,4 +1,3 @@
-var x
 function profile(x){
     settings.style.transition= "opacity 150ms ease-in-out"
     createTabs(x)
@@ -41,7 +40,6 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://www.weeia
 			if(linkPart2.length<100){
 			link = linkPart2
 			}}
-		})
     fetch("Javascript/data.json") 
     .then(response => response.json()) 
     .then(parsed => {
@@ -72,5 +70,4 @@ async function getPage(doc, pageNumber) {
         }).promise
     } else {
         console.log("Error!")
-    }}})
-}
+    }}})})}
