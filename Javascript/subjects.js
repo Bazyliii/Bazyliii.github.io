@@ -1,17 +1,18 @@
+function e(x){
+    createTabs(x)
+    fetchPlan(x)
+    showhide(settings, 'none')
+    document.querySelector("body").style.overflow = "auto"
+}
+
 function profile(x){
     settings.style.transition= "opacity 150ms ease-in-out"
-    createTabs(x)
-    fetchPlan(x)
-    showhide(settings, 'none')
-    document.querySelector("body").style.overflow = "auto"
     localStorage.setItem("kierunek", x) 
+    e(x)
 }
 if(localStorage.getItem("kierunek")!=null){
-    showhide(settings, 'none')
-    document.querySelector("body").style.overflow = "auto"
     x = localStorage.getItem("kierunek")
-    createTabs(x)
-    fetchPlan(x)
+    e(x)
 }
 function createTabs(x){
     fetch("Javascript/data.json") 
