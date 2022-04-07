@@ -204,10 +204,10 @@ h1:hover{
     }
     body{
         display: block;
+        height:100vh;
     }
     .plan-container{
         overflow: auto;
-        height:100vh;
     }
     #close-button{
         font-size: 10vw;
