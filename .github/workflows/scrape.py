@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader, PdfWriter
 from os import stat, environ
+#from localenv import localenv
+
+#localenv()
 
 
 def get_full_plan() -> None:

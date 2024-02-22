@@ -1,4 +1,6 @@
-# Default ignored files
 /shelf/
 /workspace.xml
 .idea
+localenv.py
+.github/workflows/plan.pdf
+.github/workflows/planPage.pdf
