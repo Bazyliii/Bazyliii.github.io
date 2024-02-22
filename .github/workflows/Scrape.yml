@@ -30,3 +30,14 @@ jobs:
       - name: Run python script
         run: python3 .github/workflows/scrape.py
 
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions"
+          git config --local user.name "github-actions"
+          git add --all
+          git commit -m "Refresh Scraped Data"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
