@@ -1,7 +1,7 @@
 /shelf/
 /workspace.xml
 .idea
-localenv.py
+.github/workflows/localenv.py
 .github/workflows/plan.pdf
 .github/workflows/planPage.pdf
 .github/workflows/plan.xml

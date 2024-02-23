@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name : Cache Python imports
+      - name: Cache Python imports
         uses: actions/cache@v3
         with:
           path: ${{ env.pythonLocation }}
@@ -25,8 +25,8 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r .github/workflows/requirements.txt
-        
+        run: pip install -r requirements.txt
+
       - name: Run python script
         run: python3 .github/workflows/scrape.py
 
@@ -36,7 +36,7 @@ jobs:
           git config --local user.name "github-actions"
           git add --all
           git commit -m "Refresh Scraped Data"
-          
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
