@@ -232,7 +232,6 @@ def get_subjectnames():
             temp = []
     temp.append(current_element.get_text())
     data.append(temp)
-    pp.pprint(data)
 
 
 if __name__ == "__main__":
