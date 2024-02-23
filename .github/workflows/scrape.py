@@ -2,9 +2,49 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader, PdfWriter
 from os import stat, environ
-#from localenv import localenv
+from localenv import localenv
+import pdfquery
 
-#localenv()
+localenv()
+
+
+def convert_pdf_to_xml():
+    reader = PdfReader("planPage.pdf")
+    box = reader.pages[0].mediabox
+    print(box)
+    pdf = pdfquery.PDFQuery("planPage.pdf")
+    pdf.load()
+
+    pdf.tree.write("plan.xml", pretty_print=True)
+    with open("plan.xml", "r") as f:
+        pdf = f.read()
+    soup = BeautifulSoup(pdf, "xml")
+    xd = soup.find_all('LTRect')
+    for xdd in xd:
+        # x0, y0, x1, y1
+        bboxint = xdd.get('bbox')
+        textt = xdd.get_text()
+        text = textt.replace("\n", "")
+        bbox = bboxint.strip('][').split(', ')
+        remv = ""
+        if (round(float(bbox[3]) - float(bbox[1]), 3)) == 9.12:
+            remv = text
+            print(remv)
+        if text != '' and (float(bbox[3]) - float(bbox[1])) > 12:
+            print("<div style=\"position:absolute; background:beige; width:", str(round(float(bbox[2]) - float(bbox[0]), 3)) + "px;",
+                  "height:", str(round(float(bbox[3]) - float(bbox[1]), 3)) + "px;",
+                  "top:", str(round(box.height - 306.76 - float(bbox[3]), 3)) + "px;",
+                  "left:", str(round(float(bbox[0]) - 45.231, 3)) + "px;\">", text.strip(remv), "</div>")
+
+    xddd = soup.find_all('LTLine')
+    for xs in xddd:
+        if "5.631" in xs.get('bbox'):
+            bbox = xs.get('bbox').strip('][').split(', ')
+            print("<div style=\"position:absolute; background:red; width:",
+                  str(round(float(bbox[2]) - float(bbox[0]), 3)) + "px;",
+                  "height:", str(round(float(bbox[3]) - float(bbox[1]) + 2, 3)) + "px;",
+                  "top:", str(round(box.height - 306.76 - float(bbox[3]), 3)) + "px;",
+                  "left:", str(round(float(bbox[0]) - 45.231, 3)) + "px;\">", text, "</div>")
 
 
 def get_full_plan() -> None:
@@ -66,5 +106,6 @@ def get_plan_page(word) -> None:
 
 
 if __name__ == "__main__":
-    get_full_plan()
-    get_plan_page("6AiSR4")
+    #get_full_plan()
+    #get_plan_page("6AiSR4")
+    convert_pdf_to_xml()
