@@ -31,15 +31,13 @@ jobs:
         run: python3 .github/workflows/scrape.py
 
       - name: Commit files
-      - if: ${{ env.IS_VALID == 'true'}}
         run: |
           git config --local user.email "github-actions"
           git config --local user.name "github-actions"
           git add --all
-          git commit -m "Refresh Scraped Data"
+          git commit -m "Refresh Scraped Data" || exit 0
 
       - name: Push changes
-      - if: ${{ env.IS_VALID == 'true'}}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
