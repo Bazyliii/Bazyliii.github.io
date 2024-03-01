@@ -5,3 +5,5 @@
 .github/workflows/plan.pdf
 .github/workflows/planPage.pdf
 .github/workflows/plan.xml
+/.github/workflows/pdfparser.py
+/.github/workflows/testing.py
