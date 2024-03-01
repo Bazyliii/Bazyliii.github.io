@@ -30,7 +30,7 @@ jobs:
       - name: Run python script
         run: python3 .github/workflows/scrape.py
 
-      - name: Commit files
+      - name: Commit changes
         run: |
           git config --local user.email "github-actions"
           git config --local user.name "github-actions"
