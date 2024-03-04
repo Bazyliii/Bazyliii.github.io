@@ -7,3 +7,6 @@
 .github/workflows/plan.xml
 /.github/workflows/pdfparser.py
 /.github/workflows/testing.py
+/.github/workflows/plan4AiSR4.pdf
+/.github/workflows/plan6AiSR4.pdf
+/.github/workflows/plan6AiSR4.json
