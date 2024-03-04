@@ -1,0 +1,315 @@
+[
+    {
+        "Day": 0,
+        "Start": 0,
+        "End": 2,
+        "SubjectName": "Programowanie obrabiarek sterowanych numerycznie",
+        "Class": "m A18 111",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": "POc 30st.",
+        "Teacher": [
+            "Rutkiewicz T (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 0,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Programowalne sterowniki logiczne",
+        "Class": "E 2",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sobieraj T (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 0,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Pracownia automatyki",
+        "Class": "E 2",
+        "Days": "po\u0142.2",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sobieraj T (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 0,
+        "Start": 4,
+        "End": 7,
+        "SubjectName": "Systemy nadzoru i wizualizacji proces\u00f3w przemys\u0142owych",
+        "Class": "i21 A12a/we2 RiS",
+        "Days": "Tygodnie: 5-9",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sikora S (Mgr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 0,
+        "Start": 7,
+        "End": 10,
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
+        "Class": "i21 A12a/we2 23",
+        "Days": "Tygodnie: 6-15",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Adamczyk P (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 0,
+        "End": 5,
+        "SubjectName": ".1raz",
+        "Class": null,
+        "Days": "Tydz. 1",
+        "ClassType": null,
+        "AdditionalData": "RobotChallenge Bud.A7",
+        "Teacher": []
+    },
+    {
+        "Day": 1,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Oprogramowanie system\u00f3w mikroprocesorowych",
+        "Class": "i21 C3 411",
+        "Days": "Tygodnie: 2-15",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Rybicki T (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 5,
+        "End": 7,
+        "SubjectName": "Pomiary przemys\u0142owe z uprawnieniami do 1 kV",
+        "Class": "i26 502 kl.1",
+        "Days": "1-15",
+        "ClassType": "l",
+        "AdditionalData": "obier gr.2/2",
+        "Teacher": [
+            "Szcz\u0119sny A (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 7,
+        "End": 8,
+        "SubjectName": "Oprogramowanie system\u00f3w mikroprocesorowych",
+        "Class": "E 5",
+        "Days": "1-15",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Radecki A (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 8,
+        "End": 9,
+        "SubjectName": "Pomiary przemys\u0142owe z uprawnieniami do 1 kV",
+        "Class": "E 1",
+        "Days": "1-15",
+        "ClassType": "w",
+        "AdditionalData": "POd",
+        "Teacher": [
+            "Szcz\u0119sny A (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 9,
+        "End": 11,
+        "SubjectName": "Systemy nadzoru i wizualizacji proces\u00f3w przemys\u0142owych",
+        "Class": "E 1",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sikora S (Mgr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
+        "Class": "E 5",
+        "Days": "Tydz. 6",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Adamczyk P (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Projektowanie system\u00f3w bazodanowych",
+        "Class": "E4",
+        "Days": "po\u0142.2",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Zawi\u015blak R (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 4,
+        "End": 6,
+        "SubjectName": "Programowanie obrabiarek sterowanych numerycznie",
+        "Class": "m A18 127",
+        "Days": "po\u0142.1",
+        "ClassType": "l",
+        "AdditionalData": "POc 30st.",
+        "Teacher": [
+            "K\u0119pczak N (Dr in\u017c.)",
+            "Rosik R (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 4,
+        "End": 6,
+        "SubjectName": "Programowanie obrabiarek sterowanych numerycznie",
+        "Class": "m A18 127",
+        "Days": "po\u0142.2",
+        "ClassType": "p",
+        "AdditionalData": "POc 30st.",
+        "Teacher": [
+            "K\u0119pczak N (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 6,
+        "End": 8,
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
+        "Class": "E 1",
+        "Days": "Tygodnie: 1-5",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Adamczyk P (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 8,
+        "End": 12,
+        "SubjectName": "Projektowanie system\u00f3w bazodanowych",
+        "Class": "E 1",
+        "Days": "Tygodnie: 1-5",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Zawi\u015blak R (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 2,
+        "Start": 9,
+        "End": 12,
+        "SubjectName": "Projektowanie system\u00f3w bazodanowych",
+        "Class": "E 1",
+        "Days": "Tydz. 6",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Zawi\u015blak R (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 3,
+        "Start": 0,
+        "End": 3,
+        "SubjectName": "Roboty mobilne",
+        "Class": "i21 E101",
+        "Days": "Tygodnie: 2-11",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Chlebowicz \u0141 (Mgr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 3,
+        "Start": 3,
+        "End": 6,
+        "SubjectName": "Pracownia automatyki",
+        "Class": "i21 E9 PLC",
+        "Days": "Tygodnie: 1-10",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sobieraj T (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 3,
+        "Start": 6,
+        "End": 9,
+        "SubjectName": "Projekt kompetencyjny",
+        "Class": "i21 C3 404",
+        "Days": "1-15",
+        "ClassType": "p",
+        "AdditionalData": "zapisy 90 godz.kontaktowych",
+        "Teacher": [
+            "Tatar K. (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 4,
+        "Start": 0,
+        "End": 1,
+        "SubjectName": "Roboty mobilne",
+        "Class": "E 1",
+        "Days": "1-15",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Granosik G (Dr hab.)"
+        ]
+    },
+    {
+        "Day": 4,
+        "Start": 1,
+        "End": 4,
+        "SubjectName": "Projekt kompetencyjny",
+        "Class": "i21 C3 404, i21 E100",
+        "Days": "1-15",
+        "ClassType": "p",
+        "AdditionalData": "zapisy 90 godz.kontaktowych",
+        "Teacher": [
+            "Chudzik P (Dr in\u017c.)",
+            "Lisowski G (Mgr in\u017c.)",
+            "Zarychta D (Dr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 4,
+        "Start": 4,
+        "End": 6,
+        "SubjectName": "Programowalne sterowniki logiczne",
+        "Class": "i21 E9 PLC",
+        "Days": "1-15",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sobieraj T (Dr in\u017c.)"
+        ]
+    }
+]
