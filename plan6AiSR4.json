@@ -66,17 +66,6 @@
     },
     {
         "Day": 1,
-        "Start": 0,
-        "End": 5,
-        "SubjectName": ".1raz",
-        "Class": null,
-        "Days": "Tydz. 1",
-        "ClassType": null,
-        "AdditionalData": "RobotChallenge Bud.A7",
-        "Teacher": []
-    },
-    {
-        "Day": 1,
         "Start": 2,
         "End": 4,
         "SubjectName": "Oprogramowanie system\u00f3w mikroprocesorowych",
@@ -263,11 +252,12 @@
         "Start": 6,
         "End": 9,
         "SubjectName": "Projekt kompetencyjny",
-        "Class": "i21 C3 404",
+        "Class": "i21 C3 404, i21 E100",
         "Days": "1-15",
         "ClassType": "p",
         "AdditionalData": "zapisy 90 godz.kontaktowych",
         "Teacher": [
+            "Iizuka K (Prof)",
             "Tatar K. (Dr in\u017c.)"
         ]
     },
