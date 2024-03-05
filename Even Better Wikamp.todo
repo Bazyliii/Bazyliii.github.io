@@ -1,0 +1,203 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1709567633890,
+        "children": [
+          {
+            "key": 1709567669619,
+            "children": [],
+            "todo": {
+              "content": "Interactive with move/hide/save to google calendar functionality",
+              "id": 1709567669619,
+              "level": "default",
+              "done": false,
+              "start": 1709567669619
+            }
+          },
+          {
+            "key": 1709567759270,
+            "children": [],
+            "todo": {
+              "content": "Click to go to the main wikamp page of subject",
+              "id": 1709567759270,
+              "level": "default",
+              "done": false,
+              "start": 1709567759270
+            }
+          },
+          {
+            "key": 1709680386101,
+            "children": [
+              {
+                "key": 1709680405045,
+                "children": [],
+                "todo": {
+                  "content": "Layout",
+                  "id": 1709680405045,
+                  "level": "default",
+                  "done": false,
+                  "start": 1709680405045
+                }
+              },
+              {
+                "key": 1709680415507,
+                "children": [],
+                "todo": {
+                  "content": "Data",
+                  "id": 1709680415507,
+                  "level": "default",
+                  "done": false,
+                  "start": 1709680415507
+                }
+              }
+            ],
+            "todo": {
+              "content": "Generate timetable from JSON data",
+              "id": 1709680386101,
+              "level": "default",
+              "done": false,
+              "start": 1709680386101
+            }
+          }
+        ],
+        "todo": {
+          "content": "Timetable",
+          "id": 1709567633890,
+          "level": "default",
+          "done": false,
+          "start": 1709567633890
+        }
+      },
+      {
+        "key": 1709567650733,
+        "children": [
+          {
+            "key": 1709567687863,
+            "children": [],
+            "todo": {
+              "content": "Darkmode",
+              "id": 1709567687863,
+              "level": "default",
+              "done": false,
+              "start": 1709567687863
+            }
+          },
+          {
+            "key": 1709567691873,
+            "children": [],
+            "todo": {
+              "content": "Lightmode",
+              "id": 1709567691873,
+              "level": "default",
+              "done": false,
+              "start": 1709567691873
+            }
+          },
+          {
+            "key": 1709568449473,
+            "children": [],
+            "todo": {
+              "content": "Animations",
+              "id": 1709568449473,
+              "level": "default",
+              "done": false,
+              "start": 1709568449473
+            }
+          },
+          {
+            "key": 1709680442762,
+            "children": [],
+            "todo": {
+              "content": "Responsive design",
+              "id": 1709680442762,
+              "level": "default",
+              "done": false,
+              "start": 1709680442762
+            }
+          }
+        ],
+        "todo": {
+          "content": "Glassmorphism style",
+          "id": 1709567650733,
+          "level": "default",
+          "done": false,
+          "start": 1709567650733
+        }
+      },
+      {
+        "key": 1709567908068,
+        "children": [],
+        "todo": {
+          "content": "Custom icon for EBW",
+          "id": 1709567908068,
+          "level": "default",
+          "done": false,
+          "start": 1709567908068
+        }
+      },
+      {
+        "key": 1709567922810,
+        "children": [],
+        "todo": {
+          "content": "Write Readme.md on GitHub page",
+          "id": 1709567922810,
+          "level": "default",
+          "done": false,
+          "start": 1709567922810
+        }
+      },
+      {
+        "key": 1709568004690,
+        "children": [],
+        "todo": {
+          "content": "Improve python script structure and performance",
+          "id": 1709568004690,
+          "level": "default",
+          "done": false,
+          "start": 1709568004690
+        }
+      },
+      {
+        "key": 1709568239944,
+        "children": [],
+        "todo": {
+          "content": "Write site.webmanifest file",
+          "id": 1709568239944,
+          "level": "default",
+          "done": false,
+          "start": 1709568239944
+        }
+      },
+      {
+        "key": 1709568252204,
+        "children": [],
+        "todo": {
+          "content": "Write browserconfig.xml file",
+          "id": 1709568252204,
+          "level": "default",
+          "done": false,
+          "start": 1709568252204
+        }
+      }
+    ],
+    "expandKeys": [
+      1709567633890,
+      1709567650733,
+      1709680386101,
+      1709680405045
+    ],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "timelines": [],
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "Even Better Wikamp",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "en",
+    "version": "1709680449999"
+  }
+}

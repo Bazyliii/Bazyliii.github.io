@@ -10,3 +10,4 @@
 /.github/workflows/plan4AiSR4.pdf
 /.github/workflows/plan6AiSR4.pdf
 /.github/workflows/plan6AiSR4.json
+.github/workflows/__pycache__/localenv.cpython-311.pyc
