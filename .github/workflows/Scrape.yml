@@ -1,4 +1,4 @@
-name: Scrape
+name: Scrape Timetable pdf from Wikamp and convert it to JSON file
 on:
   schedule:
     - cron: "0 12 * * *"
