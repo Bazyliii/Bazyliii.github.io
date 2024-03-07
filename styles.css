@@ -11,6 +11,7 @@
 	--ft-color: rgb(230, 230, 230);
 	--elem-color-1: rgba(33, 71, 170, 0.75);
 	--elem-color-2: rgba(123, 33, 170, 0.75);
+	--border-size: 0.2em;
 }
 
 body {
@@ -20,30 +21,31 @@ body {
 	background-position: center center;
 	background-size: cover;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	justify-items: center;
+	justify-content: center;
+	height: 100lvh;
+	font-size: 1.4vh;
 }
 
 .card,
 .plan {
-	--blur: blur(8px);
+	--blur: blur(1.5em);
 	width: 16em;
 	height: 18em;
 	background: rgba(33, 71, 170, 0.05);
-	box-shadow: 0 8px 16px 0 rgba(33, 71, 170, 0.37);
+	box-shadow: 0 1em 2em 0 rgba(33, 71, 170, 0.37);
 	backdrop-filter: var(--blur);
 	-webkit-backdrop-filter: var(--blur);
-	border: 3px solid rgba(123, 33, 170, 0.18);
+	border: var(--border-size) solid rgba(123, 33, 170, 0.18);
 	border-radius: 1em;
 	padding: 1em;
-	margin: 10px;
+	margin: 10em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	transition: ease-out 0.2s;
 }
 
 .icon {
@@ -57,21 +59,21 @@ body {
 }
 
 .card:hover {
-	transition: ease-in 0.2s;
-	transform: scale(1.15);
 	cursor: pointer;
 }
 
 .plan {
 	width: auto;
-	height: auto;
+	height: min-content;
 	display: grid;
-	grid-template-columns: 30px repeat(12, 1fr);
-	grid-template-rows: 30px repeat(5, auto);
+	justify-content: flex-start;
+	grid-template-columns: 4em repeat(12, 10em);
+	grid-template-rows: 2em repeat(5, auto);
 	gap: 0.5em;
 	transition: none;
+	margin: 2vw;
 	overflow: auto;
-	margin: 3em;
+	font-size: smaller;
 }
 
 .plan-elem,
@@ -85,21 +87,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 15px;
+	gap: 2em;
 }
 
 .plan-elem {
 	display: flex;
-	backdrop-filter: var(--blur);
-	-webkit-backdrop-filter: var(--blur);
 	background-color: rgba(73, 0, 231, 0.429);
 	overflow: hidden;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: min-content;
-	padding: 0.5em;
-	border: 3px solid rgba(123, 33, 170, 0.18);
+	height: auto;
+	border: var(--border-size) solid rgba(123, 33, 170, 0.18);
 }
 
 .plan-header-elem-2 {
@@ -120,7 +119,7 @@ body {
 	grid-column: 2 / span 12;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	/*grid-template-rows: repeat(3, 1fr);*/
+	grid-template-rows: repeat(3, 1fr);
 	height: 100%;
 	gap: 0.5em;
 }
