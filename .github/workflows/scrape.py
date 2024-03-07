@@ -46,9 +46,9 @@ def get_full_plan() -> None:
         headers=headers,
     )
     r = s.get(plan_page)
-    open("plan.pdf", "wb").write(r.content)
-    print("Waga pdf:", round(stat("plan.pdf").st_size / 1024, 1), "kB")
-    print("Liczba stron:", len(PdfReader("plan.pdf").pages))
+    open(".github/workflows/plan.pdf", "wb").write(r.content)
+    print("Waga pdf:", round(stat(".github/workflows/plan.pdf").st_size / 1024, 1), "kB")
+    print("Liczba stron:", len(PdfReader(".github/workflows/plan.pdf").pages))
 
 
 def get_plan_page(word: str) -> None:
@@ -65,7 +65,7 @@ def get_plan_page(word: str) -> None:
     for page_nr, pg in enumerate(pages):
         if word in pg.extract_text():
             pdf_writer.add_page(pdf_reader.pages[page_nr])
-            with open(f"plan{word}.pdf", "wb") as f:
+            with open(f".github/workflows/plan{word}.pdf", "wb") as f:
                 pdf_writer.write(f)
             break
 
@@ -93,7 +93,7 @@ def scrape_pdf_data(word: str) -> None:
         "18:15",
         "19:15",
     ]
-    page = fitz.open(f"plan{word}.pdf")[0]
+    page = fitz.open(f".github/workflows/plan{word}.pdf")[0]
     day_y_pos = [page.search_for(day)[0][2] for day in weekdays_list]
     hour_x_pos = [page.search_for(hour)[0][3] for hour in hours_list]
     data_dict = {
@@ -176,7 +176,7 @@ def scrape_pdf_data(word: str) -> None:
                     data_dict["ClassType"] = None
                     data_dict["Class"] = None
                 dict_list.append(data_dict.copy())
-    json.dump(dict_list, open(f"plan{word}.json", "w"), indent=4)
+    json.dump(dict_list, open(f".github/workflows/plan{word}.json", "w"), indent=4)
 
 
 if __name__ == "__main__":
