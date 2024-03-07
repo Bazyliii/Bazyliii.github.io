@@ -1,7 +1,7 @@
 from requests import session
 from bs4 import BeautifulSoup
 from pypdf import PdfReader, PdfWriter
-from os import environ, path, stat
+from os import environ, path
 import fitz
 import json
 
@@ -47,8 +47,8 @@ def get_full_plan() -> None:
     )
     r = s.get(plan_page)
     open("plan.pdf", "wb").write(r.content)
-    print("Waga pdf:", round(stat("plan.pdf").st_size / 1024, 1), "kB")
-    print("Liczba stron:", len(PdfReader("plan.pdf").pages))
+    # print("Waga pdf:", round(stat("plan.pdf").st_size / 1024, 1), "kB")
+    # print("Liczba stron:", len(PdfReader("plan.pdf").pages))
 
 
 def get_plan_page(word: str) -> None:
