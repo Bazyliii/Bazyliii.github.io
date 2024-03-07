@@ -30,7 +30,7 @@ body {
 
 .card,
 .plan {
-	--blur: blur(1.5em);
+	--blur: blur(1.4em);
 	width: 16em;
 	height: 18em;
 	background: rgba(33, 71, 170, 0.05);
