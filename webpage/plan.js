@@ -1,6 +1,6 @@
 const day = ["pon", "wt", "sr", "czw", "pt"]
 
-fetch("./plan6AiSR4.json")
+fetch("https://raw.githubusercontent.com/Bazyliii/Bazyliii.github.io/main/plan6AiSR4.json")
 	.then((response) => response.json())
 	.then((data) => {
 		data.forEach((element) => {
