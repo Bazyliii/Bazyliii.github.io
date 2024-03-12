@@ -55,7 +55,7 @@
         "Day": 0,
         "Start": 7,
         "End": 10,
-        "SubjectName": "Podstawy nap\u0119 du elektrycznego",
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
         "Class": "i21 A12a/we2 23",
         "Days": "Tygodnie: 6-15",
         "ClassType": "l",
@@ -87,14 +87,14 @@
         "ClassType": "l",
         "AdditionalData": "obier gr.2/2",
         "Teacher": [
-            "Szcz\u0119 sny A (Dr in\u017c.)"
+            "Szcz\u0119sny A (Dr in\u017c.)"
         ]
     },
     {
         "Day": 1,
         "Start": 7,
         "End": 8,
-        "SubjectName": "Oprogramowani e system\u00f3w mikroprocesoro wych",
+        "SubjectName": "Oprogramowanie system\u00f3w mikroprocesorowych",
         "Class": "E 5",
         "Days": "1-15",
         "ClassType": "w",
@@ -113,7 +113,7 @@
         "ClassType": "w",
         "AdditionalData": "POd",
         "Teacher": [
-            "Szcz\u0119 sny A (Drin\u017c.)"
+            "Szcz\u0119sny A (Dr in\u017c.)"
         ]
     },
     {
@@ -133,7 +133,7 @@
         "Day": 2,
         "Start": 2,
         "End": 4,
-        "SubjectName": "Podstawy nap\u0119 du elektrycznego",
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
         "Class": "E 5",
         "Days": "Tydz. 6",
         "ClassType": "w",
@@ -152,7 +152,7 @@
         "ClassType": "l",
         "AdditionalData": null,
         "Teacher": [
-            "Zawi\u015b lak R (Dr in\u017c.)"
+            "Zawi\u015blak R (Dr in\u017c.)"
         ]
     },
     {
@@ -165,7 +165,7 @@
         "ClassType": "l",
         "AdditionalData": "POc 30st.",
         "Teacher": [
-            "K\u0119 pczak N (Dr in\u017c .)",
+            "K\u0119pczak N (Dr in\u017c.)",
             "Rosik R (Dr in\u017c.)"
         ]
     },
@@ -179,14 +179,14 @@
         "ClassType": "p",
         "AdditionalData": "POc 30st.",
         "Teacher": [
-            "K\u0119 pczak N (Dr in\u017c.)"
+            "K\u0119pczak N (Dr in\u017c.)"
         ]
     },
     {
         "Day": 2,
         "Start": 6,
         "End": 8,
-        "SubjectName": "Podstawy nap\u0119 du elektrycznego",
+        "SubjectName": "Podstawy nap\u0119du elektrycznego",
         "Class": "E 1",
         "Days": "Tygodnie: 1-5",
         "ClassType": "w",
@@ -205,7 +205,7 @@
         "ClassType": "w",
         "AdditionalData": null,
         "Teacher": [
-            "Zawi\u015b lak R (Dr in\u017c.)"
+            "Zawi\u015blak R (Dr in\u017c.)"
         ]
     },
     {
@@ -218,7 +218,7 @@
         "ClassType": "w",
         "AdditionalData": null,
         "Teacher": [
-            "Zawi\u015b lak R (Dr in\u017c.)"
+            "Zawi\u015blak R (Dr in\u017c.)"
         ]
     },
     {
@@ -284,8 +284,8 @@
         "ClassType": "p",
         "AdditionalData": "zapisy 90 godz.kontaktowych",
         "Teacher": [
-            "Chudzik P (Dr in\u017c .)",
-            "Lisowski G (Mgr in\u017c .)",
+            "Chudzik P (Dr in\u017c.)",
+            "Lisowski G (Mgr in\u017c.)",
             "Zarychta D (Dr in\u017c.)"
         ]
     },
