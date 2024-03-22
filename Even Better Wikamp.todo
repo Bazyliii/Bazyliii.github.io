@@ -36,8 +36,10 @@
                   "content": "Layout",
                   "id": 1709680405045,
                   "level": "default",
-                  "done": false,
-                  "start": 1709680405045
+                  "done": true,
+                  "start": 1709680405045,
+                  "focus": false,
+                  "end": 1711151026446
                 }
               },
               {
@@ -58,6 +60,30 @@
               "level": "default",
               "done": false,
               "start": 1709680386101
+            }
+          },
+          {
+            "key": 1711150981959,
+            "children": [],
+            "todo": {
+              "content": "Left right swipe on mobile",
+              "id": 1711150981959,
+              "level": "default",
+              "done": false,
+              "start": 1711150981959
+            }
+          },
+          {
+            "key": 1711151092165,
+            "children": [],
+            "todo": {
+              "content": "Timeline look for mobile and possibly for PC too",
+              "id": 1711151092165,
+              "level": "default",
+              "done": true,
+              "start": 1711151092165,
+              "focus": false,
+              "end": 1711151111847
             }
           }
         ],
@@ -169,8 +195,10 @@
               "content": "Stop auto deployment after data refresh",
               "id": 1709826601751,
               "level": "default",
-              "done": false,
-              "start": 1709826601751
+              "done": true,
+              "start": 1709826601751,
+              "focus": false,
+              "end": 1711151013785
             }
           }
         ],
@@ -206,12 +234,12 @@
       }
     ],
     "expandKeys": [
-      1709567633890,
-      1709567650733,
       1709680386101,
       1709680405045,
       1709680442762,
-      1709568004690
+      1709568004690,
+      1709567650733,
+      1709567633890
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -224,6 +252,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1709826630168"
+    "version": "1711151172102"
   }
 }
