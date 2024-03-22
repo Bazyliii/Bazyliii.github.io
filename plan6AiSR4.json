@@ -122,7 +122,20 @@
         "End": 11,
         "SubjectName": "Systemy nadzoru i wizualizacji proces\u00f3w przemys\u0142owych",
         "Class": "E 1",
-        "Days": "po\u0142.1",
+        "Days": "Tygodnie: 1-5",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": [
+            "Sikora S (Mgr in\u017c.)"
+        ]
+    },
+    {
+        "Day": 1,
+        "Start": 9,
+        "End": 11,
+        "SubjectName": "Systemy nadzoru i wizualizacji proces\u00f3w przemys\u0142owych",
+        "Class": "E 2",
+        "Days": "Tydz. 6",
         "ClassType": "w",
         "AdditionalData": null,
         "Teacher": [
@@ -201,7 +214,7 @@
         "End": 12,
         "SubjectName": "Projektowanie system\u00f3w bazodanowych",
         "Class": "E 1",
-        "Days": "Tygodnie: 1-5",
+        "Days": "Tygodnie: 1-4",
         "ClassType": "w",
         "AdditionalData": null,
         "Teacher": [
@@ -214,7 +227,7 @@
         "End": 12,
         "SubjectName": "Projektowanie system\u00f3w bazodanowych",
         "Class": "E 1",
-        "Days": "Tydz. 6",
+        "Days": "Tygodnie: 5-7",
         "ClassType": "w",
         "AdditionalData": null,
         "Teacher": [
