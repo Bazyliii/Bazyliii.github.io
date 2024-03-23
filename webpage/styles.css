@@ -5,7 +5,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Cascadia Code", sans-serif;
-	font-size: 1em;
+	font-size: 0.95em;
 	color: var(--ft-color);
 	/* CSS Variables */
 	--bg-color: rgb(17, 23, 28);
@@ -31,9 +31,10 @@ body {
 	/* background-size: 2000px; */
 	height: 100lvh;
 	display: flex;
-	justify-content: center;
+
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	flex-direction: column;
 }
 
 .card {
@@ -65,11 +66,11 @@ body {
 
 .timeline {
 	display: grid;
-	width: 90vw;
+	/* width: 90vw; */
 	justify-items: start;
 	/* grid-template-rows: repeat(3, 1.2fr); */
 	grid-template-columns: repeat(2, auto);
-	justify-content: center;
+	justify-content: start;
 }
 
 .row {
@@ -117,7 +118,7 @@ body {
 	display: grid;
 	grid-template-rows: repeat(13, var(--row-height));
 	align-items: center;
-	justify-items: center;
+	/* justify-items: center; */
 	/* column-gap: 10px; */
 }
 
@@ -132,7 +133,7 @@ body {
 	width: 98%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: top;
 	text-align: center;
 }
 
@@ -144,3 +145,11 @@ body {
 	border: var(--border-size) solid var(--border-color);
 	padding: 20px;
 } */
+
+.day {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+}

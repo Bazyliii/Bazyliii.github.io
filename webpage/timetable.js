@@ -2,9 +2,12 @@ const weekNumber = new Date().getDay()
 const contentWrapper = document.querySelector(".content")
 const nextButton = document.getElementById("next")
 const previousButton = document.getElementById("previous")
+const day = document.getElementsByClassName("day")[0]
+const days = ["Poniedziałek:", "Wtorek:", "Środa:", "Czwartek:", "Piątek:"]
 
 const processData = (weekData) => {
 	contentWrapper.innerHTML = ""
+	day.textContent = days[weekData[0].Day]
 	weekData.forEach((element) => {
 		const newDiv = document.createElement("p")
 		newDiv.textContent = element.SubjectName
@@ -22,7 +25,11 @@ fetch("https://raw.githubusercontent.com/Bazyliii/Bazyliii.github.io/main/plan6A
 	.then((response) => response.json())
 	.then((data) => {
 		let lol = 1
-		const weekData = data.filter((element) => element.Day === weekNumber - lol)
+		if (weekNumber === 5 || weekNumber === 6) {
+			var weekData = data.filter((element) => element.Day === 4)
+		} else {
+			var weekData = data.filter((element) => element.Day === weekNumber - lol)
+		}
 		processData(weekData)
 
 		// previousButton.addEventListener("click", () => {
@@ -45,12 +52,12 @@ fetch("https://raw.githubusercontent.com/Bazyliii/Bazyliii.github.io/main/plan6A
 			touchendX = e.changedTouches[0].screenX
 			const distance = Math.abs(touchendX - touchstartX)
 			if (distance >= minSwipeDistance) {
-				if (touchendX < touchstartX) {
+				if (touchendX < touchstartX && lol > 2) {
 					lol -= 1
 					const weekData = data.filter((element) => element.Day === weekNumber - lol)
 					processData(weekData)
 				}
-				if (touchendX > touchstartX) {
+				if (touchendX > touchstartX && lol < 6) {
 					lol += 1
 					const weekData = data.filter((element) => element.Day === weekNumber - lol)
 					processData(weekData)

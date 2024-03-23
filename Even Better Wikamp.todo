@@ -244,6 +244,17 @@
           "done": false,
           "start": 1709568252204
         }
+      },
+      {
+        "key": 1711152207519,
+        "children": [],
+        "todo": {
+          "content": "Restructurize JS scripts",
+          "id": 1711152207519,
+          "level": "default",
+          "done": false,
+          "start": 1711152207519
+        }
       }
     ],
     "expandKeys": [
@@ -265,6 +276,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1711152170562"
+    "version": "1711152226177"
   }
 }
