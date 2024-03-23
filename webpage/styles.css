@@ -135,3 +135,12 @@ body {
 	align-items: center;
 	text-align: center;
 }
+
+/* button {
+	background-color: var(--elem-color-1);
+	color: var(--ft-color);
+	font-weight: 700;
+	background-color: transparent;
+	border: var(--border-size) solid var(--border-color);
+	padding: 20px;
+} */
