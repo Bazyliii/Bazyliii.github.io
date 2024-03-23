@@ -69,8 +69,10 @@
               "content": "Left right swipe on mobile",
               "id": 1711150981959,
               "level": "default",
-              "done": false,
-              "start": 1711150981959
+              "done": true,
+              "start": 1711150981959,
+              "focus": false,
+              "end": 1711152150935
             }
           },
           {
@@ -84,6 +86,17 @@
               "start": 1711151092165,
               "focus": false,
               "end": 1711151111847
+            }
+          },
+          {
+            "key": 1711152152557,
+            "children": [],
+            "todo": {
+              "content": "Add left / right controlls for PC",
+              "id": 1711152152557,
+              "level": "default",
+              "done": false,
+              "start": 1711152152557
             }
           }
         ],
@@ -252,6 +265,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1711151172102"
+    "version": "1711152170562"
   }
 }
