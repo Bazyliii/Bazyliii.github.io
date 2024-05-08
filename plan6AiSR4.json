@@ -133,19 +133,6 @@
         "Day": 2,
         "Start": 2,
         "End": 4,
-        "SubjectName": "Podstawy nap\u0119du elektrycznego",
-        "Class": "E 5",
-        "Days": "Tydz. 6",
-        "ClassType": "w",
-        "AdditionalData": null,
-        "Teacher": [
-            "Adamczyk P (Dr in\u017c.)"
-        ]
-    },
-    {
-        "Day": 2,
-        "Start": 2,
-        "End": 4,
         "SubjectName": "Projektowanie system\u00f3w bazodanowych",
         "Class": "E4",
         "Days": "po\u0142.2",
