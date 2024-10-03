@@ -180,7 +180,7 @@ def scrape_pdf_data(word: str) -> None:
 
 
 if __name__ == "__main__":
-    faculty = "6AiSR4"
+    faculty = "7AiSR3"
     get_full_plan()
     get_plan_page(faculty)
     scrape_pdf_data(faculty)
