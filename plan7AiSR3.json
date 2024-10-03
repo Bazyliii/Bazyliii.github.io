@@ -1,0 +1,167 @@
+[
+    {
+        "Day": 0,
+        "Start": 0,
+        "End": 2,
+        "SubjectName": "Ochrona danych Latosi\u0144ski P. (Dr)",
+        "Class": "E102",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 0,
+        "Start": 2,
+        "End": 4,
+        "SubjectName": "Automatyzacja i pomiary w elektrowni Pawlak M. (Dr in\u017c.)",
+        "Class": "i22 C3 ZE",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": "p.obieralny 2 gr.lab.",
+        "Teacher": []
+    },
+    {
+        "Day": 0,
+        "Start": 6,
+        "End": 10,
+        "SubjectName": "Interfejsy w systemach mikroprocesorowych Lisowski G. (Mgr in\u017c.)",
+        "Class": "i21 C3 410",
+        "Days": "t.1-10",
+        "ClassType": "l",
+        "AdditionalData": "gr.1/2 zapisy do 15 st.",
+        "Teacher": []
+    },
+    {
+        "Day": 0,
+        "Start": 10,
+        "End": 12,
+        "SubjectName": "Zastosowanie sterownik\u00f3w PLC w systemach automatyki przemys\u0142 Sobieraj T. (Dr in\u017c.)",
+        "Class": "w., po\u0142.1",
+        "Days": "po\u0142.1",
+        "ClassType": "w",
+        "AdditionalData": "p.obieralny e-learning",
+        "Teacher": []
+    },
+    {
+        "Day": 1,
+        "Start": 2,
+        "End": 5,
+        "SubjectName": "Ochrona danych Sikora S. (mgr in\u017c.)",
+        "Class": "i21 A12a/weB 147",
+        "Days": "t.1-10",
+        "ClassType": "l",
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 1,
+        "Start": 5,
+        "End": 7,
+        "SubjectName": "Metody i systemy sterowania produkcj\u0105 Zubrycki I. (Dr in\u017c.)",
+        "Class": "i21 E10",
+        "Days": "t1-15",
+        "ClassType": "l",
+        "AdditionalData": "gr.1/2 zapisy do 15 st.",
+        "Teacher": []
+    },
+    {
+        "Day": 1,
+        "Start": 10,
+        "End": 11,
+        "SubjectName": "",
+        "Class": null,
+        "Days": "t1-15",
+        "ClassType": null,
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 1,
+        "Start": 11,
+        "End": 12,
+        "SubjectName": "Metody i systemy sterowania produkcj\u0105 Zubrycki I. (Dr in\u017c.)",
+        "Class": "w, t1-15",
+        "Days": "t1-15",
+        "ClassType": "w",
+        "AdditionalData": "p.obieralny e- learning 2 gr.lab",
+        "Teacher": []
+    },
+    {
+        "Day": 2,
+        "Start": 4,
+        "End": 6,
+        "SubjectName": "Seminarium dyplomowe Kabzi\u0144ski J. (Dr hab.)",
+        "Class": "E 5",
+        "Days": "po\u0142.2",
+        "ClassType": "sem",
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 2,
+        "Start": 7,
+        "End": 10,
+        "SubjectName": "Automatyzacja i pomiary w elektrowni Pawlak M. (Dr in\u017c.)",
+        "Class": "i22 C3 ZE",
+        "Days": "t.1-10",
+        "ClassType": "l",
+        "AdditionalData": "p.obieralny gr.2/2 zapisy do 15 st.",
+        "Teacher": []
+    },
+    {
+        "Day": 3,
+        "Start": 1,
+        "End": 4,
+        "SubjectName": "Zastosowanie sterownik\u00f3w PLC w systemach automatyki przemys\u0142 Sobieraj T. (Dr in\u017c.)",
+        "Class": "i21 E9 PLC",
+        "Days": "t.1-10",
+        "ClassType": "l",
+        "AdditionalData": "gr.1/2 zapisy do 15 st",
+        "Teacher": []
+    },
+    {
+        "Day": 3,
+        "Start": 10,
+        "End": 12,
+        "SubjectName": "Interfejsy w systemach mikroprocesorowych Lisowski G. (Mgr in\u017c.)",
+        "Class": "i21 C3 404",
+        "Days": "Tygodnie: 1-2",
+        "ClassType": "w",
+        "AdditionalData": "obie grupy",
+        "Teacher": []
+    },
+    {
+        "Day": 4,
+        "Start": 0,
+        "End": 3,
+        "SubjectName": "Zastosowanie sterownik\u00f3w PLC w systemach automatyki przemys\u0142 Sobieraj T. (Dr in\u017c.)",
+        "Class": "i21 E9 PLC",
+        "Days": "t.1-10",
+        "ClassType": "l",
+        "AdditionalData": "gr.2/2 zapisy do 15 st",
+        "Teacher": []
+    },
+    {
+        "Day": 4,
+        "Start": 3,
+        "End": 5,
+        "SubjectName": "Seminarium dyplomowe Bartoszewicz A. (Prof. dr h)",
+        "Class": "i21 A12a/weB 147",
+        "Days": "Tydz. 1",
+        "ClassType": "sem",
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 4,
+        "Start": 3,
+        "End": 5,
+        "SubjectName": "Seminarium dyplomowe Bartoszewicz A. (Prof. dr h)",
+        "Class": "E 6",
+        "Days": "Tygodnie: 2",
+        "ClassType": "sem",
+        "AdditionalData": null,
+        "Teacher": []
+    }
+]
