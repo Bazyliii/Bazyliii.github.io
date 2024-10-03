@@ -23,7 +23,7 @@ def get_full_plan() -> None:
         None
     """
     login_page = "https://cas.p.lodz.pl/cas/login?service=https%3A%2F%2Fweeia.edu.p.lodz.pl%2Flogin%2Findex.php%3FauthCAS%3DCAS"
-    plan_page = "https://weeia.edu.p.lodz.pl/mod/resource/view.php?id=63920"
+    plan_page = "https://weeia.edu.p.lodz.pl/mod/resource/view.php?id=85260"
 
     with session() as s:
         req = s.get(login_page).text
