@@ -147,17 +147,6 @@
         "Start": 3,
         "End": 5,
         "SubjectName": "Seminarium dyplomowe Bartoszewicz A. (Prof. dr h)",
-        "Class": "i21 A12a/weB 147",
-        "Days": "Tydz. 1",
-        "ClassType": "sem",
-        "AdditionalData": null,
-        "Teacher": []
-    },
-    {
-        "Day": 4,
-        "Start": 3,
-        "End": 5,
-        "SubjectName": "Seminarium dyplomowe Bartoszewicz A. (Prof. dr h)",
         "Class": "E 6",
         "Days": "Tygodnie: 2",
         "ClassType": "sem",
