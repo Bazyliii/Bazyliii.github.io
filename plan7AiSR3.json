@@ -12,6 +12,17 @@
     },
     {
         "Day": 0,
+        "Start": 0,
+        "End": 5,
+        "SubjectName": ".Egzamin kompetencyjny",
+        "Class": null,
+        "Days": "Tydz. 14",
+        "ClassType": null,
+        "AdditionalData": null,
+        "Teacher": []
+    },
+    {
+        "Day": 0,
         "Start": 2,
         "End": 4,
         "SubjectName": "Automatyzacja i pomiary w elektrowni Pawlak M. (Dr in\u017c.)",
@@ -19,17 +30,6 @@
         "Days": "po\u0142.1",
         "ClassType": "w",
         "AdditionalData": "p.obieralny 2 gr.lab.",
-        "Teacher": []
-    },
-    {
-        "Day": 0,
-        "Start": 2,
-        "End": 6,
-        "SubjectName": ".Egzamin kompetencyjny",
-        "Class": null,
-        "Days": "Tydz. 14",
-        "ClassType": null,
-        "AdditionalData": null,
         "Teacher": []
     },
     {
